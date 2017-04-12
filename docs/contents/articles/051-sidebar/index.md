@@ -95,7 +95,7 @@ Name of the item is taken from `state`'s `title` property. Sample state configur
 $stateProvider
         .state('dashboard', {
           url: '/dashboard',
-          templateUrl: 'app/pages/dashboard/dashboard.html',
+          templateUrl: 'src/app/pages/dashboard/dashboard.html',
           title: 'Dashboard',
           sidebarMeta: {
             icon: 'ion-android-home',

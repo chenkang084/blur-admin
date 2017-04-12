@@ -12,7 +12,7 @@
   function pageTop() {
     return {
       restrict: 'E',
-      templateUrl: 'app/theme/components/pageTop/pageTop.html'
+      templateUrl: 'src/app/theme/components/pageTop/pageTop.html'
     };
   }
 

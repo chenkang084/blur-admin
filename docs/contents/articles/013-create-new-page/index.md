@@ -53,7 +53,7 @@ This will allow you to easily switch off some pages in the future if needed.
     $stateProvider
         .state('myNewPage', {
           url: '/myNewPage',
-          templateUrl: 'app/pages/myNewPage/my-new-page.html',
+          templateUrl: 'src/app/pages/myNewPage/my-new-page.html',
           title: 'My New Page',
           sidebarMeta: {
             order: 800,

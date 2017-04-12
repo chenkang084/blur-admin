@@ -12,7 +12,7 @@
   function popularApp() {
     return {
       restrict: 'E',
-      templateUrl: 'app/pages/dashboard/popularApp/popularApp.html'
+      templateUrl: 'src/app/pages/dashboard/popularApp/popularApp.html'
     };
   }
 })();

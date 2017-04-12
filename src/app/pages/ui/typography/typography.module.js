@@ -13,7 +13,7 @@
     $stateProvider
         .state('ui.typography', {
           url: '/typography',
-          templateUrl: 'app/pages/ui/typography/typography.html',
+          templateUrl: 'src/app/pages/ui/typography/typography.html',
           title: 'Typography',
           sidebarMeta: {
             order: 0,

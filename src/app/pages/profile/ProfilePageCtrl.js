@@ -70,7 +70,7 @@
       $uibModal.open({
         animation: false,
         controller: 'ProfileModalCtrl',
-        templateUrl: 'app/pages/profile/profileModal.html'
+        templateUrl: 'src/app/pages/profile/profileModal.html'
       }).result.then(function (link) {
           item.href = link;
         });

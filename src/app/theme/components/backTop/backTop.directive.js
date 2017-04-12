@@ -12,7 +12,7 @@
   function backTop() {
     return {
       restrict: 'E',
-      templateUrl: 'app/theme/components/backTop/backTop.html',
+      templateUrl: 'src/app/theme/components/backTop/backTop.html',
       controller: function () {
         $('#backTop').backTop({
           'position': 200,

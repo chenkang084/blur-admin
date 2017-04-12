@@ -15,7 +15,7 @@
       scope: {
         ngModel: '='
       },
-      templateUrl: 'app/theme/components/widgets/widgets.html',
+      templateUrl: 'src/app/theme/components/widgets/widgets.html',
       replace: true
     };
   }
