@@ -15,11 +15,11 @@ gulp.task('scripts-reload', function() {
 });
 
 gulp.task('scripts', function() {
-  return buildScripts();
+  // return buildScripts();
 });
 
 function buildScripts() {
-  return gulp.src(path.join(conf.paths.src, '/app/**/*.js'))
+  return gulp.src(path.join(conf.paths.bundle, '/*.js'))
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.size())

@@ -28,7 +28,7 @@ var webpackConfig = {
 
     output: {
         // publicPath: __dirname + "/public",
-        path: __dirname + "/dist", //the path saving packed file 
+        path: path.join(__dirname, "/dist"), //the path saving packed file 
         // filename: "bundle[hash].js" //the out put file name
         filename: "bundle.js"
     },
@@ -40,13 +40,13 @@ var webpackConfig = {
         hot: true,
         progress: true,
         compress: true,
-        port:'8090'
+        port: '8090'
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
         alias: {
-            moment: path.join(__dirname, '/node_modules/moment/min/moment-with-locales.js'),
-            'font-awesome': path.join(__dirname, '/node_modules/font-awesome/scss/font-awesome.scss'),
+            // moment: path.join(__dirname, '/node_modules/moment/min/moment-with-locales.js'),
+            // 'font-awesome': path.join(__dirname, '/node_modules/font-awesome/scss/font-awesome.scss'),
         }
     },
     module: { //
@@ -120,8 +120,8 @@ var webpackConfig = {
         // }),
 
         // new CopyWebpackPlugin([{
-        //     from: './app/assets',
-        //     to: 'assets'
+        //     from: './dist/bundle.js',
+        //     to: './.tmp/serve/'
         // }]),
 
         // new ExtractTextPlugin('style.css', {

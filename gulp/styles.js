@@ -58,7 +58,7 @@ var buildStyles = function () {
     .pipe($.sass(sassOptions)).on('error', conf.errorHandler('Sass'))
     .pipe($.autoprefixer()).on('error', conf.errorHandler('Autoprefixer'))
     .pipe($.sourcemaps.write())
-    .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app/')));
+    .pipe(gulp.dest(path.join(conf.paths.tmp, '/')));
 };
 
 var buildSingleScss = function (paths) {

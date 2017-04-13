@@ -5,6 +5,7 @@
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.5.0",
     "browser-sync": "~2.18.2",
     "browser-sync-spa": "~1.0.3",
     "chalk": "~1.1.1",
@@ -59,6 +60,10 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "cross-env NODE_ENV=local webpack-dev-server "
+    "start": "cross-env NODE_ENV=local webpack-dev-server ",
+    "build-local": "cross-env NODE_ENV=local webpack --content-base public/ --progress --colors --inline --compress",
+    "build-qa": "cross-env NODE_ENV=qa webpack --content-base public/ --progress --colors --inline --compress",
+    "build-prod": "cross-env NODE_ENV=prod webpack --content-base public/ --progress --colors --inline --compress",
+    "copy-file": "node ./build/copyfile.js"
   }
 }

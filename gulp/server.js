@@ -48,11 +48,11 @@ browserSync.use(browserSyncSpa({
 }));
 
 gulp.task('serve', ['watch'], function () {
-  browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src]);
+  // browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src]);
 });
 
 gulp.task('serve:dist', ['build'], function () {
-  browserSyncInit(conf.paths.dist);
+  // browserSyncInit(conf.paths.dist);
 });
 
 gulp.task('serve:e2e', ['inject'], function () {
