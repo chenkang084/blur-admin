@@ -99,7 +99,7 @@ var webpackConfig = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: './index.html',
-            template: path.join(__dirname, "/src/index.html"), //packed js append to index.html,set index.html path
+            template: path.join(__dirname, "/.tmp/serve/index.html"), //packed js append to index.html,set index.html path
         }),
         new webpack.DefinePlugin({
             'process.env': "'" + env + "'",
