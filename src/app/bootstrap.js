@@ -138,8 +138,3 @@ import "./pages/form/inputs/widgets/oldSwitches/switch.directive.js"
 import "./pages/form/inputs/widgets/switches/SwitchDemoPanelCtrl.js"
 import "./pages/form/inputs/widgets/tagsInput/tagsInput.directive.js" 
 
-
-// let req = require.context('../sass', true, /^.*\.scss$/igm);
-// req.keys().forEach(req);
-
-// import '../sass/main.scss'
