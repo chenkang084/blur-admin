@@ -16,3 +16,7 @@ angular.module('BlurAdmin', [
   'BlurAdmin.theme',
   'BlurAdmin.pages'
 ]);
+
+var t = require('./test/test2.js')
+
+console.log(t)
