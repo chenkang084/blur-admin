@@ -138,3 +138,7 @@ import "./pages/form/inputs/widgets/oldSwitches/switch.directive.js"
 import "./pages/form/inputs/widgets/switches/SwitchDemoPanelCtrl.js"
 import "./pages/form/inputs/widgets/tagsInput/tagsInput.directive.js" 
 
+
+
+
+import "../sass/module.js"

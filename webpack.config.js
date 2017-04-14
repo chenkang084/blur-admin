@@ -5,14 +5,14 @@ var webpack = require('webpack'),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
     _ = require('lodash'),
     path = require('path'),
-    // ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
     env = _.trim(process.env.NODE_ENV);
 
 console.log("=============================" + env + "=============================");
 console.log("=============================" + __dirname + "=============================");
 
 var webpackConfig = {
-    devtool: 'cheap-module-source-map', //generate source map for developing
+    devtool: 'source-map', //generate source map for developing
     entry: {
         app: path.join(__dirname, "/src/app/bootstrap.js"), //the main file for start app
         vendor: [
@@ -68,7 +68,8 @@ var webpackConfig = {
             },
             {
                 test: /\.scss$/,
-                loader: 'style!css!postcss!sass',
+                // loader: 'style!css!postcss!sass',
+                loader: ExtractTextPlugin.extract('style','css!sass'),
                 // loader: ExtractTextPlugin.extract([ 'css-loader', 'postcss-loader','sass-loader' ]),
                 // exclude: /node_modules/,
             },
@@ -124,9 +125,9 @@ var webpackConfig = {
         //     to: './.tmp/serve/'
         // }]),
 
-        // new ExtractTextPlugin('style.css', {
-        //     allChunks: true,
-        // }),
+        new ExtractTextPlugin('style.css', {
+            allChunks: true,
+        }),
 
     ],
 
